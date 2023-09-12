@@ -1,3 +1,9 @@
+provider "aws" {
+access_key= ${access_key}
+secret_key=${secret_key}
+region="ap-southeast-1"
+}
+
 resource "aws_vpc" "v1" {
 cidr_block= "10.0.0.0/16"
 }
